@@ -1,0 +1,130 @@
+/* Responsive-only overrides */
+@media (max-width: 768px) {
+    .nav ul {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 8px;
+        overflow: visible;
+    }
+
+    .nav ul li {
+        float: none;
+    }
+
+    .nav ul li a {
+        padding: 6px 8px;
+    }
+
+    .container,
+    .header {
+        width: auto;
+        max-width: none;
+        margin-left: 12px;
+        margin-right: 12px;
+        padding: 16px;
+    }
+
+    .container img,
+    .home-img img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .container table tbody,
+    .container table tr {
+        display: block;
+    }
+
+    .container table td {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .container table img,
+    img {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .profile-image {
+        width: min(200px, 55vw);
+        height: min(200px, 55vw);
+    }
+
+    .home {
+        height: auto;
+        min-height: 0;
+        padding: 32px 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .home-content {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .home-content h1 {
+        font-size: clamp(1.8rem, 7vw, 2.2rem);
+    }
+
+    .home-content h3 {
+        font-size: clamp(1.3rem, 5vw, 1.6rem);
+    }
+
+    .home-content p {
+        font-size: clamp(1rem, 4vw, 1.25rem);
+        overflow-wrap: anywhere;
+    }
+
+    .home-img {
+        width: min(300px, 80vw);
+        max-width: 300px;
+    }
+
+    .home-img img {
+        width: 100%;
+        max-width: none;
+    }
+
+    p,
+    li {
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav ul {
+        font-size: 17px;
+    }
+
+    .nav ul li a {
+        padding: 5px 6px;
+    }
+
+    .container,
+    .header {
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 12px;
+    }
+
+    .social-media {
+        gap: 10px;
+    }
+}
